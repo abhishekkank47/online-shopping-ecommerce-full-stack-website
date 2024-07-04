@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400&display=swap");
+/*popins 300-400 * playfair 700/
+/* font-family: "Poppins", sans-serif; */
+
+/* font-family: "Playfair Display", serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =======================LayoutPage========================== */
+
+.layout-content{
+  background:#e7eaf6;
+}
+
+/* =======================LayoutPage========================== */
+
+
+/* =======================Header========================== */
+
+/*navbar*/
+.navbar {
+  height:8vh;
+  background:#a2a8d3 !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  line-height: 26px;
+  box-shadow: 0 8px 6px -6px #113f67;
+  --webkit-box-shadow: 0 8px 6px -6px #113f67;
+}
+
+.nav-link{
+  font-weight:300 !important;
+  color:#fcfefe !important;
+}
+
+.active{
+  border-bottom:1px solid #e7eaf6;
+}
+
+.navbar-brand{
+  color:#fcfefe !important;
+  font-weight:700;
+  letter-spacing:3px;
+}
+
+/* =======================Header========================== */
+/* =======================footer========================== */
+
+.footer{
+  height:14vh;
+  color:white;
+  padding:25px;
+  background: #000000;
+  --webkit-background:#000000;
+}
+
+.footer a{
+  text-decoration:none;
+  color:skyblue;
+  padding:10px;
+}
+
+.footer a:hover{
+  color:yellow;
+  border-bottom:1px solid yellow;
+}
+/* =======================footer========================== */
+
+
+/* =======================PageNotFound========================== */
+.pnf{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  min-height:78vh;
+}
+
+.pnf-title{
+  color:#38598b;
+  font-weight:700;
+  font-size:100px;
+}
+
+.pnf-button {
+  color:black;
+  border:1px solid black;
+  text-decoration:none;
+  font-size:17px;
+  padding:10px;
+  border-radius:15px;
+}
+
+.pnf-button:hover{
+  color:#e7eaf6;
+  background: #113f67;
+}
+
+/* =======================PageNotFound========================== */
+
+/* =======================ContactUs========================== */
+.contactus{
+  padding:30px;
+}
+.contactus-img{
+  height:100%;
+  width:100%;
+  padding:10px 0 10px 0;
+}
+
+.contactus-title{
+  color:white;
+  background:black;
+  font-weight:700;
+  font-size:50px;
+  text-transform: uppercase;
+  letter-spacing:4px;
+  padding:3px;
+  margin:10px;
+}
+
+.contactus-content{
+  font-family: "Poppins", sans-serif;
+  font-weight:400;
+  font-size:20px;
+  text-align:left;
+  padding:3px;
+  margin:10px;
+}
+
+.ctu{
+  color:white;
+  font-weight:300 !important;
+  background:#38598b;
+  padding:30px;
+  box-shadow: 0 8px 6px -6px gray;
+  --webkit-box-shadow: 0 8px 6px -6px gray;
+}
+
+/* =======================ContactUs========================== */
+
+/* =======================AboutUs========================== */
+.aboutUs{
+  padding:30px;
+}
+.aboutus-img{
+  height:100%;
+  width:100%;
+  padding:10px 0 10px 0;
+}
+
+.aboutus-title{
+  color:white;
+  background:black;
+  font-weight:700;
+  font-size:50px;
+  text-transform: uppercase;
+  letter-spacing:4px;
+  padding:3px;
+  margin:10px;
+}
+
+.aboutus-content{
+  font-family: "Poppins", sans-serif;
+  font-weight:400;
+  font-size:20px;
+  text-align:left;
+  padding:3px;
+  margin:10px;
+}
+
+.atu{
+  color:white;
+  font-weight:300 !important;
+  background:#38598b;
+  padding:30px;
+  box-shadow: 0 8px 6px -6px gray;
+  --webkit-box-shadow: 0 8px 6px -6px gray;
+}
+
+/* =======================AboutUs========================== */
+
+
+/* =======================Policy========================== */
+
+.policyContainer{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  height:78vh;
+}
+
+.policy-img{
+  height:100%;
+  width:100%;
+  
+}
+/* =======================Policy========================== */
+
+
+/* =======================Register/LoginForm========================== */
+
+.register-container{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-family: "Poppins", sans-serif;
+  min-height:78vh;
+}
+
+.register-title{
+  font-weight:700;
+  font-size:17px;
+  color:#38598b;
+  /* padding:5px 20px 5px 20px; */
+  letter-spacing:2px;
+  margin:10px 0 15px 0;
+}
+
+.form-label{
+  font-size:13px;
+}
+
+.reg-login-form{
+  width:25vw;
+  background:#8dc6ff;
+  border-radius:10px;
+  padding:10px 30px 10px 30px;
+  margin-bottom:10px;
+  box-shadow: rgba(0,0,0.35)0px 5px 10px;
+}
+
+
+.form-control{
+  background:#defcf9;
+}
+
+
+.submitformbtn{
+  color:#e7eaf6;
+  background: #113f67;
+
+}
+
+.btn:hover{
+  color:white;
+  background: black;
+}
+
+.forgotPass:hover{
+  color:black;
+  font-weight:700;
+  /* text-shadow: 0 0 1px #FF0000; */
+}
+
+.forgotPass{
+  text-decoration:none;
+  color:#113f67;
+  text-border:1px;
+  font-size:9px;
+}
+
+/* =======================Register/LoginForm========================== */
+
+/* =======================Admin panel========================== */
+
+.panel-title{
+  /* color:#38598b;
+  font-weight:700;
+  font-size:1px; */
+}
+.createCategorybtn{
+  background:#4feb34;
+  border:none;
+}
+
+.delete{
+  background:red;
+}
+
+/* =======================Admin panel========================== */
+
+/* =======================Admin panel products page========================== */
+
+.product-card{
+  width: 18rem ! important ;
+  text-decoration:none;
+}
+
+.product-card-link{
+  text-decoration:none;
+}
+
+/* =======================Admin panel product page========================== */
