@@ -4,6 +4,7 @@ import AdminMenu from '../../components/layouts/AdminMenu'
 import toast from 'react-hot-toast'
 import axios from 'axios'
 import { Modal } from 'antd'
+
 const CreateCategory = () => {
 const [categories,setCategories]=useState([])
 const [name,setName]=useState()
@@ -62,7 +63,7 @@ const getAllCategories = async ()=>{
   try {
     const {data}= await axios.get('http://localhost:8000/api/v1/category/all-category')
     if(data.success){
-        setCategories(data.category)
+        setCategories(data?.category)
     }
   } catch (error) {
     console.log(error)
@@ -82,7 +83,7 @@ useEffect(()=>{
             <AdminMenu/>
         </div>
         <div className='col-md-9'>
-              <div className='card w-80 p-3'>
+              <div className='card w-80 p-3 mb-2'>
                 <center><h3 className='m-3'>Manage Categories</h3></center>
                 <div className=''>
 
