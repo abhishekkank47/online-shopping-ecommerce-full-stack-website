@@ -52,7 +52,7 @@ try {
   const {data}= await axios.post('http://localhost:8000/api/v1/product/create-product', productData)
   if(data?.success){
       toast.success(`PRODUCT ${data.name} CREATED SUCESSFULLY`)
-      navigate(`/dashboard/admin/product`)
+      navigate(`/dashboard/admin/products`)
   }
 } catch (error) {
   console.log(error)
@@ -65,14 +65,14 @@ try {
     <>
     <Layout title="">     
     <div className='container-fluid'>
-      <h1>Admin Panel</h1>
+    <h1 className='admin-title'>ADMIN PANEL</h1>
       <div className='row'>
         <div className='col-md-3'>
             <AdminMenu/>
         </div>
         <div className='col-md-9'>
-              <div className='card w-80 p-3 mb-2'>
-              <center><h3 className='m-3'>Create Product</h3></center>
+              <div className='card w-80 p-3 mb-2 admin-content'>
+              <center><h3 className='m-3'>CREATE A NEW PRODUCT</h3></center>
               <div className='m-1 w-80'>
                 <Select 
                 bordered={false} 
@@ -87,7 +87,7 @@ try {
                 </Select>
 
                 <div className='mb-3'>
-                  <label  className='btn btn-outline-secondary '>
+                  <label  className='btn btn-primary btn-uploadPhoto '>
                   {photo ? photo.name : "Upload Product Photo"}
                     <input 
                     type='file' 
@@ -129,14 +129,14 @@ try {
                 placeholder='SELECT SHIPPING' 
                 size ='large' 
                 showSearch
-                className='form-select mb-3'
+                className='form-select mb-3 select-productCreate'
                 onChange={(value)=>{setShipping(value)}}>
                <Option value='0'>NO</Option>
                <Option value='1'>YES</Option>
                 </Select>
 
                 <div className='mb-3'>
-                <center><button className='btn btn-primary' onClick={handleCreateProduct}>CREATE PRODUCT</button></center>
+                <center><button className='btn btn-primary btn-createProduct' onClick={handleCreateProduct}>CREATE PRODUCT</button></center>
                 </div>
                 </div>
               </div>     

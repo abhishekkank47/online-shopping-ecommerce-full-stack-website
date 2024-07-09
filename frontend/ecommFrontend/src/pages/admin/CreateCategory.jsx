@@ -77,14 +77,14 @@ useEffect(()=>{
     <>
        <Layout title="Dashboard-Create Categories">
     <div className='container-fluid'>
-    <center><h1 className=''>Admin Panel</h1></center>
+    <h1 className='admin-title'>ADMIN PANEL</h1>
       <div className='row'>
         <div className='col-md-3'>
             <AdminMenu/>
         </div>
         <div className='col-md-9'>
-              <div className='card w-80 p-3 mb-2'>
-                <center><h3 className='m-3'>Manage Categories</h3></center>
+              <div className='card w-80 p-3 mb-2 admin-content'>
+                <center><h3 className='m-3'>MANAGE CATEGORIES</h3></center>
                 <div className=''>
 
                 <form className='p-3'onSubmit={handleCreateCategory}>
@@ -96,7 +96,7 @@ useEffect(()=>{
 
 
                 <table className="table">
-                    <thead>
+                    <thead className='thead'>
                       <tr>
                         <th scope="col">NAME</th>
                         <th scope="col"><center>ACTIONS</center></th>

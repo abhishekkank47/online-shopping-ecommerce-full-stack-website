@@ -272,10 +272,10 @@
 
 /* =======================Admin panel========================== */
 
-.panel-title{
-  /* color:#38598b;
+.admin-title{
+  color:#38598b;
+  padding:15px;
   font-weight:700;
-  font-size:1px; */
 }
 .createCategorybtn{
   background:#4feb34;
@@ -288,6 +288,33 @@
 
 /* =======================Admin panel========================== */
 
+/* =======================Admin menu========================== */
+
+.admin-menu{
+  background:#bbe4e9;
+  font-weight:700;
+  font-size:20px;
+}
+
+.admin-content{
+  background:#bbe4e9;
+}
+
+.thead{
+  font-size:25px;
+  font-weight:700;
+}
+td{
+  background:#bbe4e9 !important;
+  font-weight:700;
+}
+th{
+  background:#bbe4e9 !important;
+}
+
+/* =======================Admin menu========================== */
+
+
 /* =======================Admin panel products page========================== */
 
 .product-card{
@@ -297,6 +324,11 @@
 
 .product-card-link{
   text-decoration:none;
+}
+
+.btn-createProduct{
+  background:#4feb34;
+  border:none;
 }
 
 /* =======================Admin panel product page========================== */

@@ -7,7 +7,7 @@ const Users = () => {
     <>
     <Layout title="">
     <div className='container-fluid'>
-      <h1>Admin Panel</h1>
+    <h1 className='admin-title'>ADMIN PANEL</h1>
       <div className='row'>
         <div className='col-md-3'>
             <AdminMenu/>
